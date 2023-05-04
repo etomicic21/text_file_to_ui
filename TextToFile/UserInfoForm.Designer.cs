@@ -1,6 +1,6 @@
 ﻿namespace TextToFile
 {
-    partial class Form1
+    partial class UserInfoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +51,7 @@
             this.btnChooseFile.TabIndex = 0;
             this.btnChooseFile.Text = "Choose file...";
             this.btnChooseFile.UseVisualStyleBackColor = true;
+            this.btnChooseFile.Click += new System.EventHandler(this.btnChooseFile_Click);
             // 
             // lblName
             // 
@@ -148,7 +149,7 @@
             this.lblAttribute.TabIndex = 11;
             this.lblAttribute.Text = "[role specific attribute]:";
             // 
-            // Form1
+            // UserInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,8 +167,11 @@
             this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnChooseFile);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "UserInfoForm";
+            this.ShowIcon = false;
+            this.Text = "User data display";
             this.ResumeLayout(false);
             this.PerformLayout();
 
