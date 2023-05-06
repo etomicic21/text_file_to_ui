@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace TextToFile
 {
     public class UserFileReader
     {
-        public string ReadFile(string directory)
+        public string ReadFile(string path)
         {
-            return File.ReadAllText(directory);
+            return File.ReadAllText(path);
         }
     }
 }
