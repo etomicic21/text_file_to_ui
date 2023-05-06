@@ -9,9 +9,9 @@ namespace TextToFile
 {
     public class UserFileReader
     {
-        public string ReadFile(string directory)
+        public string ReadFile(string path)
         {
-            return File.ReadAllText(directory);
+            return File.ReadAllText(path);
         }
     }
 }
